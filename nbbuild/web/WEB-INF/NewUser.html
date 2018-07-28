@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>REGISTER</title>
+</head>
+<body background="images\2.jpg">
+<form name="form1" method="POST" >
+ <SCRIPT language="JavaScript">
+  function validate()
+  {
+  if( document.form1.UserName.value=="")
+  {
+  alert("UserName cannot be blank");
+  return;
+  }
+  if( document.form1.Password.value=="")
+  {
+  alert("Password cannot be blank");
+  return;
+  }
+  if( document.form1.Password.value!= document.form1.Password2.value)
+  {
+  alert("The two passwords do not match");
+  return;
+  }
+  if( document.form1.FirstName.value=="")
+  {
+  alert("First Name cannot be blank");
+ return;
+  }
+  if(document.form1.LastName.value=="")
+  {
+  alert("Last Name cannot be blank");
+  return;
+  }
+
+  if( document.form1.Address1.value=="")
+  {
+  alert("Address cannot be blank");
+return;
+  }
+
+  if( document.form1.City.value=="")
+  {
+  alert("City cannot be blank");
+ return;
+  }
+  if( document.form1.State.value=="Select State")
+  {
+  alert("You must select a state");
+return;
+  }
+  if( document.form1.PinCode.value=="")
+  {
+  alert("PinCode cannot be blank");
+ return;
+  }
+  if( document.form1.Email.value=="")
+  {
+  alert("Email ID cannot be blank");
+ return;
+  }
+if( document.form1.Phone.value=="")
+  {
+  alert("Phone Number cannot be blank");
+ return;
+  }
+  document.forms[0].action="SignIN.jsp";
+  document.forms[0].submit();
+
+  }
+ </SCRIPT>
+
+ <p align="center">
+  <b><font face="Copperplate Gothic" size="28" color=green> New User Registration</font></b>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </p>
+ <p align="left">
+  &nbsp;<b><font color="#FF0000">( Field marked * are necessary)</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+  </p>
+  <div align="left">
+    <table border="0" width="100%">
+      <tr>
+        <td width="23%"><b>UserName *:</b></td>
+        <td width="77%">
+            <b>
+  			<input type="text" name="UserName" size="20" tabindex="1">
+            </b>
+        </td>
+      </tr>
+      <tr>
+        <td width="23%">
+            <b>
+            Password*:</b></td>
+        <td width="77%"><b><input type="password" name="Password" size="20" tabindex="2">
+          </b>
+        </td>
+      </tr>
+      <tr>
+        <td width="23%">
+            <b>
+            Confirm Password*:</b>
+        </td>
+        <td width="77%"><b><input type="password" name="Password2" size="20" tabindex="3">
+          </b>
+        </td>
+      </tr>
+      <tr>
+        <td width="23%">
+            <b>
+            First Name*:</b></td>
+        <td width="77%">
+            <b><input type="text" name="FirstName" size="20" tabindex="4">
+            </b>
+        </td>
+      </tr>
+      <tr>
+        <td width="23%">
+            <b>
+            Middle Name:</b></td>
+        <td width="77%">
+            <b>
+            <input type="text" name="MiddleName" size="20" tabindex="5">
+            </b>
+        </td>
+      </tr>
+      <tr>
+        <td width="23%">
+            <b>
+            Last Name*:</b></td>
+        <td width="77%">
+            <b><input type="text" name="LastName" size="20" tabindex="6">
+            </b>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div align="center">
+    <center>
+    <table border="0" width="100%" height="201">
+      <tr>
+        <td width="23%" height="25"><b>Address1*:&nbsp;&nbsp;</b></td>
+        <td width="77%" height="25"><b><input type="text" name="Address1" size="43" tabindex="7"> </b> </td>
+      </tr>
+      <tr>
+        <td width="23%" height="25"><b>Address2:&nbsp;</b></td>
+        <td width="77%" height="25"><b><input type="text" name="Address2" size="43" tabindex="8"> </b> </td>
+      </tr>
+      <tr>
+        <td width="23%" height="25"><b>City*:&nbsp;</b></td>
+        <td width="77%" height="25"><b><input type="text" name="City" size="20" tabindex="9"> </b> </td>
+      </tr>
+      <tr>
+        <td width="23%" height="25"><b>State*:</b></td>
+        <td width="77%" height="25"><b><select size="1" name="State" tabindex="10">
+            <option selected value="Select State">Select State</option>
+            <option>Andhra Pradesh</option>
+            <option>Arunachal Pradesh</option>
+            <option>Assam</option>
+            <option>Bihar</option>
+            <option>Delhi</option>
+            <option>Gujurat</option>
+            <option>Haryana</option>
+            <option>Jammu & Kashmir</option>
+            <option>Jharkhand</option>
+            <option>Karnataka</option>
+            <option>Kerala</option>
+            <option>Madhya Pradesh</option>
+            <option>Maharashtra</option>
+            <option>Manipur</option>
+            <option>Nagaland</option>
+            <option>Orissa</option>
+            <option>Punjab</option>
+            <option>Rajasthan</option>
+            <option>TamilNadu</option>
+            <option>Uttar Pradesh</option>
+            <option>Tripura</option>
+            <option>West Bengal</option>
+          </select> </b> </td>
+      </tr>
+      <tr>
+        <td width="23%" height="25"><b>Pin Code*:&nbsp;</b></td>
+        <td width="77%" height="25"><b><input type="text" name="PinCode" size="20" tabindex="11"> </b> </td>
+      </tr>
+      <tr>
+        <td width="23%" height="25"><b>Email ID*:</b></td>
+        <td width="77%" height="25"><b><input type="text" name="Email" size="20" tabindex="12"> </b> </td>
+      </tr>
+      <tr>
+        <td width="23%" height="25"><b>Phone Number*:</b></td>
+        <td width="77%" height="25"><b><input type="text" name="Phone" size="20" tabindex="13"> </b> </td>
+      </tr>
+      <tr>
+        <td width="23%" height="1"></td>
+        <td width="77%" height="1"> </td>
+      </tr>
+      <tr>
+        <td width="23%" height="21"></td>
+        <td width="77%" height="21">
+   <b>
+   <input type="submit" value="Submit" name="B1" onclick="validate();" tabindex="13">
+   </b>
+ </td>
+      </tr>
+    </table>
+    </center>
+  </div>
+
+</form>
+</body>
+</html>
